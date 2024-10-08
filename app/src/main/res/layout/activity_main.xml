@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Header Layout -->
+            <RelativeLayout
+                android:id="@+id/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/instagram_logo" />
+
+                <ImageView
+                    android:id="@+id/btnBell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_heart"
+                    android:layout_marginEnd="50dp" />
+
+                <ImageView
+                    android:id="@+id/btnMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_share"/>
+            </RelativeLayout>
+
+            <!-- Story Layout -->
+            <HorizontalScrollView
+                android:id="@+id/story_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_layout">
+
+                <LinearLayout
+                    android:id="@+id/profile_stats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/header_layout"
+                    android:gravity="center">
+
+                    <!-- User Story -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/user_story"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/user_story"/>
+                        <TextView
+                            android:id="@+id/name_postingan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/your_story"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <!-- Asset Stories -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/assets_story_one"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/asset_story"/>
+                        <TextView
+                            android:id="@+id/assets_story_name_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/assets_story"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <!-- Liga Stories -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/liga_story_one"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/liga_story"/>
+                        <TextView
+                            android:id="@+id/liga_story_name_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/liga_story"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+
+                    <!-- Repeat for other stories -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/assets_story_two"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/asset_story"/>
+                        <TextView
+                            android:id="@+id/assets_story_name_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/assets_story"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/liga_story_two"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/liga_story"/>
+                        <TextView
+                            android:id="@+id/liga_story_name_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/liga_story"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/assets_story_three"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/asset_story"/>
+                        <TextView
+                            android:id="@+id/assets_story_name_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/assets_story"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/liga_story_three"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/liga_story"/>
+                        <TextView
+                            android:id="@+id/liga_story_name_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/liga_story"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+                <LinearLayout
+                    android:id="@+id/post_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/story_account"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp">
+                    <!-- Post One Layout -->
+                    <RelativeLayout
+                        android:id="@+id/profil_post_layout_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/icon_pp_one"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/fufufafa_pp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/icon_pp_one"
+                            android:layout_marginStart="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/name_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/name_post_one"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/username_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/username_post_one"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/btnMenu_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_titik_tiga"/>
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:id="@+id/img_post_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/post_fufufafa"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:visibility="visible"/>
+
+                    <LinearLayout
+                        android:id="@+id/img_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/btn_like_one"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_heart"/>
+
+                        <ImageView
+                            android:id="@+id/btn_comment_one"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_comment"/>
+
+                        <ImageView
+                            android:id="@+id/btn_share_one"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_share"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:id="@+id/btn_save_one"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_bookmark"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/disukai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disukai_one"
+                        android:textSize="14sp" />
+                    <LinearLayout
+                        android:id="@+id/caption_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/username_post_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name_post_one"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tag_post_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tag_one"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"/>
+                    </LinearLayout>
+                    <!-- Post Two Layout -->
+                    <RelativeLayout
+                        android:id="@+id/profil_post_layout_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/icon_pp_two"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/assets_ugm_pp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/icon_pp_two"
+                            android:layout_marginStart="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/name_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/name_post_two"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/username_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/username_post_two"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/btnMenu_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_titik_tiga"/>
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:id="@+id/img_post_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/post_asset"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:visibility="visible"/>
+
+                    <LinearLayout
+                        android:id="@+id/img_layout_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/btn_like_two"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_heart"/>
+
+                        <ImageView
+                            android:id="@+id/btn_comment_two"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_comment"/>
+
+                        <ImageView
+                            android:id="@+id/btn_share_two"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_share"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:id="@+id/btn_save_two"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_bookmark"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/disukai_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disukai_one"
+                        android:textSize="14sp" />
+                    <LinearLayout
+                        android:id="@+id/caption_post_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/username_post_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name_post_two"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tag_post_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tag_one"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"/>
+                    </LinearLayout>
+                    <!-- Post Three Layout -->
+                    <RelativeLayout
+                        android:id="@+id/profil_post_layout_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/icon_pp_three"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/liga_trpl_pp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/icon_pp_three"
+                            android:layout_marginStart="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/name_three"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/name_post_three"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/username_three"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/username_post_three"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/btnMenu_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_titik_tiga"/>
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:id="@+id/img_post_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/post_liga"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:visibility="visible"/>
+
+                    <LinearLayout
+                        android:id="@+id/img_layout_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/btn_like_three"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_heart"/>
+
+                        <ImageView
+                            android:id="@+id/btn_comment_three"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_comment"/>
+
+                        <ImageView
+                            android:id="@+id/btn_share_three"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_share"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="24dp"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:id="@+id/btn_save_three"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_bookmark"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/disukai_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disukai_one"
+                        android:textSize="14sp" />
+                    <LinearLayout
+                        android:id="@+id/caption_post_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/username_post_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name_post_three"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tag_post_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tag_three"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"/>
+                    </LinearLayout>
+                </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <!-- Bottom Navigation Section -->
+    <LinearLayout
+        android:id="@+id/linear_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_active"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"/>
+
+        <ImageView
+            android:id="@+id/upload"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_upload"/>
+
+        <ImageView
+            android:id="@+id/reels"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_reels"/>
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile"/>
+    </LinearLayout>
+</RelativeLayout>

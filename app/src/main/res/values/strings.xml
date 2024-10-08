@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">UTS_PPAPBA_Dimal Karim</string>
+    <string name="jmlh_postingan">6956</string>
+    <string name="postingan">postingan</string>
+    <string name="jmlh_follower">27,7Jt</string>
+    <string name="follower">pengikut</string>
+    <string name="jmlh_following">219</string>
+    <string name="following">mengikuti</string>
+    <string name="name">Ikhwan Hanipp</string>
+    <string name="content">Programmer</string>
+    <string name="name_profile">_iknip</string>
+    <string name="edit_profile">Edit profil</string>
+    <string name="share_profile">Bagikan profil</string>
+    <string name="your_story">your story</string>
+    <string name="assets_story">Assets</string>
+    <string name="liga_story">Liga</string>
+    <string name="name_post_one">Fufufafa</string>
+    <string name="username_post_one">putra Mulyono</string>
+    <string name="disukai_one">Disukai oleh Ikhwan_Hanif</string>
+    <string name="tag_one">  #Proud</string>
+    <string name="name_post_two">assets_ugm</string>
+    <string name="username_post_two">Sekolah Vokasi Universitas Gadjah Mada</string>
+    <string name="disukai_two">Disukai oleh Ikhwan_Hanif</string>
+    <string name="tag_two">  #Proud</string>
+    <string name="name_post_three">Liga TRPL</string>
+    <string name="username_post_three">Menyambut Liga Terpal</string>
+    <string name="disukai_three">Disukai oleh Ikhwan_Hanif</string>
+    <string name="tag_three">  #Proud</string>
+    <string name="bio">“You might not think that programmers are  artists, but programming is an extremely creative profession. It’s  logic-based creativity.” – John Romero  💻</string>
+</resources>
